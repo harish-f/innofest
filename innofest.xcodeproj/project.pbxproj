@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FAE435A2908F2CF00576FE9 /* SpeechRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE43592908F2CF00576FE9 /* SpeechRecogniser.swift */; };
+		2FAE435C2908F4F200576FE9 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE435B2908F4F200576FE9 /* AppView.swift */; };
 		4542A0702908EC00002A80DE /* innofestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4542A06F2908EC00002A80DE /* innofestApp.swift */; };
 		4542A0722908EC00002A80DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4542A0712908EC00002A80DE /* ContentView.swift */; };
 		4542A0742908EC02002A80DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4542A0732908EC02002A80DE /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FAE43592908F2CF00576FE9 /* SpeechRecogniser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecogniser.swift; sourceTree = "<group>"; };
+		2FAE435B2908F4F200576FE9 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		4542A06C2908EC00002A80DE /* innofest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = innofest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4542A06F2908EC00002A80DE /* innofestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = innofestApp.swift; sourceTree = "<group>"; };
 		4542A0712908EC00002A80DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				4542A06F2908EC00002A80DE /* innofestApp.swift */,
+				2FAE43592908F2CF00576FE9 /* SpeechRecogniser.swift */,
+				2FAE435B2908F4F200576FE9 /* AppView.swift */,
 				4542A0712908EC00002A80DE /* ContentView.swift */,
 				4542A0732908EC02002A80DE /* Assets.xcassets */,
 				4542A0752908EC02002A80DE /* Preview Content */,
@@ -103,7 +109,7 @@
 				};
 			};
 			buildConfigurationList = 4542A0672908EC00002A80DE /* Build configuration list for PBXProject "innofest" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAE435C2908F4F200576FE9 /* AppView.swift in Sources */,
 				4542A0722908EC00002A80DE /* ContentView.swift in Sources */,
 				4542A0702908EC00002A80DE /* innofestApp.swift in Sources */,
+				2FAE435A2908F2CF00576FE9 /* SpeechRecogniser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -269,10 +277,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"innofest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,10 +307,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"innofest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
